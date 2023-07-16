@@ -35,5 +35,8 @@
     "regenerator-runtime": "^0.13.9",
     "terser-webpack-plugin": "^5.1.4",
     "webpack-cli": "^4.8.0"
+  },
+  "dependencies": {
+    "webpack": "^5.88.1"
   }
 }

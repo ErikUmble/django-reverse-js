@@ -138,6 +138,6 @@ tests/django_reverse_js/**
 node_modules
 node_modules/**
 
-# files generated with babel
-django_reverse_js/templates/django_reverse_js/url-resolver.min.js
-django_reverse_js/templates/django_reverse_js/url-resolver.js
+# files generated with babel (Erik now includes these to the repo to avoid needing a build step)
+#django_reverse_js/templates/django_reverse_js/url-resolver.min.js
+#django_reverse_js/templates/django_reverse_js/url-resolver.js
