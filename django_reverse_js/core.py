@@ -116,7 +116,7 @@ def generate_js(default_urlresolver):
         'django_reverse_js/url-resolver.tpl.js',
         {
             'data': _safe_json(generate_json(default_urlresolver, script_prefix)),
-            'js_name': f'{settings.JS_GLOBAL_OBJECT_NAME}.{settings.JS_VAR_NAME}',
+            'js_name': f'export const {settings.JS_VAR_NAME}',  // changed from f'{settings.JS_GLOBAL_OBJECT_NAME}.{settings.JS_VAR_NAME}' to export the resolver
             'reversejs_template': settings.JS_TEMPLATE,
         },
     )
